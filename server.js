@@ -6,7 +6,10 @@ const URL = process.env.URL
 const app = express();
 const dirname = import.meta.dirname;
 
-console.log(PORT, URL)
+app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true}));
+app.set("view engine", "ejs")
+
 
 async function connectToDb() {
   try {
@@ -24,15 +27,13 @@ async function connectToDb() {
 
 function createServer(movies) {
 
-  app.use(express.urlencoded({ extended: true}));
-  app.set("view engine", "ejs")
 
   
   // ROUTES 
   app.get('/', async(req, res) => {
     try {
       const moviesList = await movies.find().toArray();
-      console.log(movies);
+      // console.log(movies);
       res.render('index.ejs', {movies: moviesList})
     } catch(err){
       console.log('nop')

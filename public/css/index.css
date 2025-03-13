@@ -1,0 +1,66 @@
+*, body {
+  margin:0;
+  list-style: none;
+  box-sizing: content-box;
+  padding:0;
+}
+
+
+header {
+  border:1px solid saddlebrown;
+
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+/* -------------- INPUT-DIV --------- */
+#inputDiv{
+  border: 1px solid darkblue;
+  
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+
+input {
+  padding:8px 10px;
+  width:480px;
+  font-size: 1rem;
+  line-height: 20px;
+
+  border-radius: 6px;
+}
+
+button {
+  font-size: 1.1rem;
+  padding: 6px 10px;
+}
+
+/* ---------------------------------------------- */
+/* ------------ YOUR COLLECTION ------------------ */
+
+.collection {
+  padding: 20px 20px;
+}
+
+
+/* UL MOVIES LAYOUT GRID */
+.ulMovies {
+  border: 2px solid darkblue;
+  
+  padding: 20px 2px;
+  
+  
+  
+}
+
+li {
+  border: 2px solid saddlebrown;
+}
+
+/* ====================== */
+
+/* ---------------------------------------------- */
